@@ -160,7 +160,7 @@ def vote(request, question_id):
     return HttpResponse("You're voting on question %s." % question_id)
 ```
 detail,result,vote 뷰 추가   
-```%s에는 question_id의 값이 들어감```
+```%s에는 question_id의 값이 들어감 파이썬은 ,대신 %사용```
 
 * polls/urls.py
 ```
@@ -361,7 +361,7 @@ class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list' //템플릿에 넘겨줄때 사용할 변수 이름 지정
 
-    def get_queryset(self):
+    def get_queryset(self): //메소드 
         return Question.objects.order_by('-pub_date')[:5]
 
 
