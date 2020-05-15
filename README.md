@@ -1,7 +1,7 @@
 # Django_Tutorial
 
 ## 1.기본설정
-1. python -m venv 가상환경이름
+1. python -m venv 가상환경이름 (vscode의 경우 써줘야 )
 2. source 가상환경이름/Scripts/activate
 3. pip install django
 4. django-admin startproject config .   
@@ -448,3 +448,4 @@ list_filter=['pub_date']
 search_fields=['question_text]
 ```
 
+//배프의 파이썬 웹 프로그래밍 튜토리얼 따라하기
